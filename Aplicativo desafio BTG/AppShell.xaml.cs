@@ -1,4 +1,4 @@
-﻿namespace Aplicativo_desafio_BTG
+﻿namespace AplicativoDesafioBTG
 {
     public partial class AppShell : Shell
     {

@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace Aplicativo_desafio_BTG
+namespace AplicativoDesafioBTG
 {
     internal class Program : MauiApplication
     {

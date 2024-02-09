@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace Aplicativo_desafio_BTG
+namespace AplicativoDesafioBTG
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

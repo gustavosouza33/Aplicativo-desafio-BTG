@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace Aplicativo_desafio_BTG
+namespace AplicativoDesafioBTG
 {
     [Application]
     public class MainApplication : MauiApplication

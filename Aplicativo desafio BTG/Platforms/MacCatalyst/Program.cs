@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace Aplicativo_desafio_BTG
+namespace AplicativoDesafioBTG
 {
     public class Program
     {

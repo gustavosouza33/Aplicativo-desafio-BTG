@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace Aplicativo_desafio_BTG
+namespace AplicativoDesafioBTG
 {
     public static class MauiProgram
     {

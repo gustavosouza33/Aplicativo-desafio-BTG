@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:drawables="clr-namespace:AplicativoDesafioBTG.Drawables"
+             xmlns:viewmodels="clr-namespace:AplicativoDesafioBTG.ViewModel"
+             xmlns:App="clr-namespace:AplicativoDesafioBTG"
+             x:DataType="viewmodels:MainPageViewModel"
+             x:Class="AplicativoDesafioBTG.View.MainPage">
+    <Grid BackgroundColor="Black" Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+
+        <GraphicsView Drawable="{Binding GraficoLinha}" HeightRequest="{Binding Source={x:Static App:App.alturaGrafico}}" WidthRequest="{Binding Source={x:Static App:App.larguraGrafico}}" 
+               Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" />
+
+        <VerticalStackLayout Grid.Row="0" Grid.Column="1" Margin="20,0,0,0" VerticalOptions="Center">
+            <Label Text="Preço inicial(R$)" TextColor="White"/>
+            <Entry x:Name="EtrPrecoInicial" BackgroundColor="LightGray" WidthRequest="200" TextColor="Black" 
+                    Text="{Binding TextPrecoInicial}" >
+            </Entry>
+
+            <Label Text="Volatilidade média(%)" TextColor="White" Margin="0,20,0,0"/>
+            <Entry BackgroundColor="LightGray" WidthRequest="200" TextColor="Black" 
+                   Keyboard="Numeric" Text="{Binding TextVolatilidadeMedia}"/>
+
+            <Label Text="Retorno médio(%)" TextColor="White" Margin="0,20,0,0"/>
+            <Entry BackgroundColor="LightGray" WidthRequest="200" TextColor="Black" 
+                   Keyboard="Numeric" Text="{Binding TextRetornoMedio}"/>
+
+            <Label Text="Tempo(dias)" TextColor="White" Margin="0,20,0,0"/>
+            <Entry BackgroundColor="LightGray" WidthRequest="200" TextColor="Black" 
+                   Keyboard="Numeric" Text="{Binding TextTempo}"/>
+
+            <Button Text="Gerar simulação" HorizontalOptions="Center" Margin="0,20,0,0" Command="{Binding GerarSimulacao}" />
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
